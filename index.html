@@ -26,6 +26,10 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
+        .grid2 > img {
+            width: 50%;
+        }
+
         .box1 {
             padding: 10px;
             grid-column: 2/3;
@@ -49,13 +53,15 @@
             padding-bottom: 20px;
         }
 
-        .box4 {
+        #hemsidan{
             padding: 10px;
             text-align: center;
             grid-row: 5;
             grid-column: 1/4;
             color: white;
             background-color: #2250A8;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             
         }
 
@@ -98,11 +104,19 @@
 
         .box9 > a {
             padding: 5px;
+            
         }
-        .box4:hover {
+
+        .box9 > img {
+            width: 15%;
+        }
+        #hemsidan:hover {
             background-color:rgb(27, 57, 114);
         }
 
+        #hemsidan:visited {
+            text-decoration: none;
+        }
         p{
             font-size:x-small;
         }
@@ -134,7 +148,7 @@
                 <div class="box1"><img src="https://via.tt.se/data/images/00606/f3b65ed9-b110-4931-bf9e-190598008b5d.png" alt="lidllogga" width=50%></div>
                 <div class="box2">Nu har vi kampanj på bullar!</div>
                 <div class="box3">Nu har vi extrapris på alla typer av bullar. Fiskbullar, potatisbullar, kanelbullar YOU NAME IT! Från och med imorgon kan du spara upp till 50kr vid valfritt köp av alla typer av bullar i butiken, vare sig det är till kvällsmåltiden eller till fikat. </div>
-                <div class="box4">Till Hemsidan</div>
+                <a id="hemsidan" href="https://www.lidl.se/" target="_blank"><div class="box4">Till Hemsidan</div></a>
                 <div class="box5"><img src="https://www.citygross.se/images/products/05702024201351_C1C1_20180919.jpg?w=300" alt="fiskbullar" width=50%><h style="font-weight: bold">  Fiskbullar</h><p style="font-size:x-small">15,95/st</p></div>
                 <div class="box6"><img src="https://www.citygross.se/images/products/07310240073850_C1N1_2019-12-18.jpg?w=300" alt="potatisbullar" width=50%><h>Potatisbullar</h><p>40,95/st</p></div>
                 <div class="box7"><img src="https://www.citygross.se/images/products/07310500176833_G1N1_2019-06-18.jpg?w=300" alt="potatisbullar" width="50%"><h>Kanelbullar</h><p>22,95/st</p></div>
