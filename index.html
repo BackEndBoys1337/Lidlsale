@@ -26,10 +26,6 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .grid2 > img {
-            width: 50%;
-        }
-
         .box1 {
             padding: 10px;
             grid-column: 2/3;
@@ -65,20 +61,27 @@
             
         }
 
-        .box5 {
-                  
+        .box5 {                 
             grid-row: 4;
             margin: 10px;
             padding: 10px;
             background-color: white;
             
         }
-        
+
+        .box5 > img {
+            width: 50%;
+        }
+
         .box6 {
             margin: 10px;
             grid-row: 4;
             padding: 10px;
             background-color: white;
+        }
+
+        .box6 > img {
+            width: 50%;
         }
 
         .box7 {
@@ -87,6 +90,10 @@
             grid-row:4;
             
             padding: 10px;
+        }
+
+        .box7 > img {
+            width: 50%;
         }
 
         .box8 {
@@ -107,15 +114,19 @@
             
         }
 
-        .box9 > img {
-            width: 15%;
+        a > img {
+           width: 15%; 
         }
+
         #hemsidan:hover {
             background-color:rgb(27, 57, 114);
         }
 
         #hemsidan:visited {
             text-decoration: none;
+        }
+        #lidllogga {
+            width: 50%;
         }
         p{
             font-size:x-small;
@@ -145,15 +156,15 @@
     <div class="back">
         <div class="grid1">
             <div class="grid2">
-                <div class="box1"><img src="https://via.tt.se/data/images/00606/f3b65ed9-b110-4931-bf9e-190598008b5d.png" alt="lidllogga" width=50%></div>
+                <div class="box1"><img id="lidllogga" src="https://via.tt.se/data/images/00606/f3b65ed9-b110-4931-bf9e-190598008b5d.png" alt="lidllogga"></div>
                 <div class="box2">Nu har vi kampanj på bullar!</div>
                 <div class="box3">Nu har vi extrapris på alla typer av bullar. Fiskbullar, potatisbullar, kanelbullar YOU NAME IT! Från och med imorgon kan du spara upp till 50kr vid valfritt köp av alla typer av bullar i butiken, vare sig det är till kvällsmåltiden eller till fikat. </div>
                 <a id="hemsidan" href="https://www.lidl.se/" target="_blank"><div class="box4">Till Hemsidan</div></a>
-                <div class="box5"><img src="https://www.citygross.se/images/products/05702024201351_C1C1_20180919.jpg?w=300" alt="fiskbullar" width=50%><h style="font-weight: bold">  Fiskbullar</h><p style="font-size:x-small">15,95/st</p></div>
-                <div class="box6"><img src="https://www.citygross.se/images/products/07310240073850_C1N1_2019-12-18.jpg?w=300" alt="potatisbullar" width=50%><h>Potatisbullar</h><p>40,95/st</p></div>
-                <div class="box7"><img src="https://www.citygross.se/images/products/07310500176833_G1N1_2019-06-18.jpg?w=300" alt="potatisbullar" width="50%"><h>Kanelbullar</h><p>22,95/st</p></div>
+                <div class="box5"><img src="https://www.citygross.se/images/products/05702024201351_C1C1_20180919.jpg?w=300" alt="fiskbullar"><h style="font-weight: bold">  Fiskbullar</h><p style="font-size:x-small">15,95/st</p></div>
+                <div class="box6"><img src="https://www.citygross.se/images/products/07310240073850_C1N1_2019-12-18.jpg?w=300" alt="potatisbullar" ><h>Potatisbullar</h><p>40,95/st</p></div>
+                <div class="box7"><img src="https://www.citygross.se/images/products/07310500176833_G1N1_2019-06-18.jpg?w=300" alt="potatisbullar" ><h>Kanelbullar</h><p>22,95/st</p></div>
                 <div class="box8"><p>Regler och Villkor</p><p>Avsluta prenumeration</p></div>
-                <div class="box9"><a href="https://www.instagram.com/lidlsve/?hl=en" target="_blank"><img src="https://ci4.googleusercontent.com/proxy/ZmtVJH3fyXXMb9b9csI4zI22DZP0e3EEK4grNCPIJmAJ8P6ha3oMjmUd4WZSDtta6HltATLuHVuDRiaPFxZXDcb93v5MFsI_Kg=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/Instagram_dark.png" alt="Instagram" width=15%></a><a href="https://twitter.com/lidlsve?lang=en" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/jLZSccWIQtL0JX_OYHVUVm4H7f-V1q2TqxA2_qxbpdZpZc4xpjmFQubTMKG6YmaMeZ5jCVtQak4Ep7MzJ3eGWlLP6LkSc_M=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/Twitter_dark.png" alt="Twitter" width=15%></a><a href="https://www.facebook.com/lidlsverige/" target="_blank"><img src="https://ci6.googleusercontent.com/proxy/stBlHVAmCliFZ-6l8ELoi_8BER9gC4dYnXeP0uoVMSDwfdK9mRbCbSgzhQSABZIjEVrezrOTAWU-3x0rQqCfY2kucFFLCGPr=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/Facebook_dark.png" alt="Facebook" width=15%></a><a href="https://www.youtube.com/user/lidlsve" target="_blank"><img src="https://ci6.googleusercontent.com/proxy/y5Auc8Qg7x2zsA_c8JlCULl9DXZjgGXRsb9_KlfwKizKhxh2PabMQG0Cl3JRGvhny7GBxcMsrEZrAt-grdKnE33equmim8lgq48WrFMgHul039o=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/youtube_icon_dark_2x_USE.png" alt="Youtube" width=15%></a></div>
+                <div class="box9"><a id="insta"href="https://www.instagram.com/lidlsve/?hl=en" target="_blank"><img src="https://ci4.googleusercontent.com/proxy/ZmtVJH3fyXXMb9b9csI4zI22DZP0e3EEK4grNCPIJmAJ8P6ha3oMjmUd4WZSDtta6HltATLuHVuDRiaPFxZXDcb93v5MFsI_Kg=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/Instagram_dark.png" alt="Instagram"></a><a id="twitter" href="https://twitter.com/lidlsve?lang=en" target="_blank"><img src="https://ci5.googleusercontent.com/proxy/jLZSccWIQtL0JX_OYHVUVm4H7f-V1q2TqxA2_qxbpdZpZc4xpjmFQubTMKG6YmaMeZ5jCVtQak4Ep7MzJ3eGWlLP6LkSc_M=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/Twitter_dark.png" alt="Twitter"></a><a id="facebook"href="https://www.facebook.com/lidlsverige/" target="_blank"><img src="https://ci6.googleusercontent.com/proxy/stBlHVAmCliFZ-6l8ELoi_8BER9gC4dYnXeP0uoVMSDwfdK9mRbCbSgzhQSABZIjEVrezrOTAWU-3x0rQqCfY2kucFFLCGPr=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/Facebook_dark.png" alt="Facebook"></a><a id="youtube" href="https://www.youtube.com/user/lidlsve" target="_blank"><img src="https://ci6.googleusercontent.com/proxy/y5Auc8Qg7x2zsA_c8JlCULl9DXZjgGXRsb9_KlfwKizKhxh2PabMQG0Cl3JRGvhny7GBxcMsrEZrAt-grdKnE33equmim8lgq48WrFMgHul039o=s0-d-e1-ft#http://dzvpwvcpo1876.cloudfront.net/youtube_icon_dark_2x_USE.png" alt="Youtube"></a></div>
             </div>
         </div>
     </div>
