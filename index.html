@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        
+        .back{
+            display: grid;
+        }
         .grid1 {
             border: 1px black solid;
             background-color: #F2f3f5;
@@ -48,20 +52,33 @@
             padding: 10px;
             text-align: center;
             grid-row: 4;
-            grid-column: 2;
+            grid-column: 1/4;
             color: white;
             background-color: #2250A8
             
         }
+
+        @media only screen and (min-width: 728px){
+            .back{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+            .grid1 {
+                grid-column: 2;
+            }
+        }
     </style>
 </head>
-<body>
-    <div class="grid1">
-        <div class="grid2">
-            <div class="box1"><img src="lidllogga.png" alt="lidllogga" width=50%;></div>
-            <div class="box2">Nu har vi kampanj på bullar!</div>
-            <div class="box3">Nu har vi extrapris på alla typer av bullar. Fiskbullar, potatisbullar, kanelbullar YOU NAME IT! Från och med imorgon kan du spara upp till 50kr vid valfritt köp av alla typer av bullar i butiken, vare sig det är till kvällsmåltiden eller till fikat. </div>
-            <div class="box4">Till Hemsidan</div>
+<body style="background-color:#2250A8">
+    <div class="back">
+        <div class="grid1">
+            <div class="grid2">
+                <div class="box1"><img src="https://via.tt.se/data/images/00606/f3b65ed9-b110-4931-bf9e-190598008b5d.png" alt="lidllogga" width=50%;></div>
+                <div class="box2">Nu har vi kampanj på bullar!</div>
+                <div class="box3">Nu har vi extrapris på alla typer av bullar. Fiskbullar, potatisbullar, kanelbullar YOU NAME IT! Från och med imorgon kan du spara upp till 50kr vid valfritt köp av alla typer av bullar i butiken, vare sig det är till kvällsmåltiden eller till fikat. </div>
+                <div class="box4">Till Hemsidan</div>
+            </div>
         </div>
     </div>
 </body>
