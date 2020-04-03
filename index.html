@@ -11,7 +11,8 @@
             display: grid;
         }
         .grid1 {
-            border: 1px black solid;
+            text-align: center;
+            border: 1px black ridge;
             background-color: #F2f3f5;
             padding: 10px;
         }
@@ -51,33 +52,67 @@
         .box4 {
             padding: 10px;
             text-align: center;
-            grid-row: 4;
+            grid-row: 7;
             grid-column: 1/4;
             color: white;
-            background-color: #2250A8
+            background-color: #2250A8;
             
         }
 
-        @media only screen and (min-width: 728px){
+        .box5 {
+                  
+            grid-row: 4;
+            margin: 10px;
+            padding: 10px;
+            background-color: white;
+            
+        }
+        
+        .box6 {
+            margin: 10px;
+            grid-row: 4;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .box7 {
+            margin: 10px;
+            background-color: white;
+            grid-row:4;
+            
+            padding: 10px;
+        }
+        .box4:hover {
+            background-color:rgb(27, 57, 114);
+        }
+
+        @media only screen and (min-width: 320px){
+
+
             .back{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
             .grid1 {
-                grid-column: 2;
+            grid-column: 2;
             }
         }
+        
+
     </style>
 </head>
 <body style="background-color:#2250A8">
     <div class="back">
         <div class="grid1">
             <div class="grid2">
-                <div class="box1"><img src="https://via.tt.se/data/images/00606/f3b65ed9-b110-4931-bf9e-190598008b5d.png" alt="lidllogga" width=50%;></div>
+                <div class="box1"><img src="https://via.tt.se/data/images/00606/f3b65ed9-b110-4931-bf9e-190598008b5d.png" alt="lidllogga" width=50%></div>
                 <div class="box2">Nu har vi kampanj på bullar!</div>
                 <div class="box3">Nu har vi extrapris på alla typer av bullar. Fiskbullar, potatisbullar, kanelbullar YOU NAME IT! Från och med imorgon kan du spara upp till 50kr vid valfritt köp av alla typer av bullar i butiken, vare sig det är till kvällsmåltiden eller till fikat. </div>
                 <div class="box4">Till Hemsidan</div>
+                <div class="box5"><img src="https://www.citygross.se/images/products/05702024201351_C1C1_20180919.jpg?w=300" alt="fiskbullar" width=50%><h style="font-weight: bold">  Fiskbullar</h><p style="font-size:x-small">15,95/st</p></div>
+                <div class="box6"><img src="https://www.citygross.se/images/products/07310240073850_C1N1_2019-12-18.jpg?w=300" alt="potatisbullar" width=50%><h style="font-weight: bold">Potatisbullar</h><p style="font-size:x-small">40,95/st</p></div>
+                <div class="box7"><img src="https://www.citygross.se/images/products/07310500176833_G1N1_2019-06-18.jpg?w=300" alt="potatisbullar" width="50%"><h style="font-weight: bold">Kanelbullar</h><p style="font-size:x-small">22,95/st</p></div>
             </div>
         </div>
     </div>
